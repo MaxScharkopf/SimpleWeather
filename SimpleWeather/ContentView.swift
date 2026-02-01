@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    var city: String = "New York"
+    var temperature: Double = 20.0
+    var condition: String = "Clear"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "cloud")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Welcome Weather app")
+            Text("In \(city), it is \(temperature)°C and \(condition).")
         }
         .padding()
     }
